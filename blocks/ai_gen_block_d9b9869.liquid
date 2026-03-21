@@ -1,0 +1,958 @@
+{% doc %}
+  @prompt
+    please  make for me a us vs others table 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-table-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+
+  .ai-comparison-table__heading-{{ ai_gen_id }} {
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-comparison-table__wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    border-radius: {{ block.settings.table_border_radius }}px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-comparison-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background }};
+  }
+
+  .ai-comparison-table__header-{{ ai_gen_id }} {
+    background-color: {{ block.settings.header_background }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }} {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: {{ block.settings.header_font_size }}px;
+    color: {{ block.settings.header_text_color }};
+    border-bottom: 2px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    width: 40%;
+  }
+
+  .ai-comparison-table__us-header-{{ ai_gen_id }} {
+    background-color: {{ block.settings.us_column_background }};
+    color: {{ block.settings.us_column_text_color }};
+    position: relative;
+  }
+
+  .ai-comparison-table__badge-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }} {
+    border-bottom: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }} {
+    padding: 16px 20px;
+    text-align: center;
+    font-size: {{ block.settings.body_font_size }}px;
+    color: {{ block.settings.body_text_color }};
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .ai-comparison-table__us-cell-{{ ai_gen_id }} {
+    background-color: {{ block.settings.us_cell_background }};
+    font-weight: 600;
+  }
+
+  .ai-comparison-table__check-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: {{ block.settings.check_background }};
+  }
+
+  .ai-comparison-table__check-{{ ai_gen_id }} svg {
+    width: 16px;
+    height: 16px;
+    stroke: {{ block.settings.check_color }};
+  }
+
+  .ai-comparison-table__cross-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: {{ block.settings.cross_background }};
+  }
+
+  .ai-comparison-table__cross-{{ ai_gen_id }} svg {
+    width: 16px;
+    height: 16px;
+    stroke: {{ block.settings.cross_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-table__heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-comparison-table__header-cell-{{ ai_gen_id }} {
+      padding: 12px 8px;
+      font-size: {{ block.settings.header_font_size | times: 0.9 }}px;
+    }
+
+    .ai-comparison-table__cell-{{ ai_gen_id }} {
+      padding: 12px 8px;
+      font-size: {{ block.settings.body_font_size | times: 0.9 }}px;
+    }
+
+    .ai-comparison-table__badge-{{ ai_gen_id }} {
+      display: block;
+      margin: 4px 0 0;
+    }
+  }
+{% endstyle %}
+
+<comparison-table-{{ ai_gen_id }}
+  class="ai-comparison-table-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.heading != blank %}
+    <h2 class="ai-comparison-table__heading-{{ ai_gen_id }}">
+      {{ block.settings.heading }}
+    </h2>
+  {% endif %}
+
+  <div class="ai-comparison-table__wrapper-{{ ai_gen_id }}">
+    <table class="ai-comparison-table__table-{{ ai_gen_id }}">
+      <thead class="ai-comparison-table__header-{{ ai_gen_id }}">
+        <tr>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">
+            {{ block.settings.feature_column_label }}
+          </th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }} ai-comparison-table__us-header-{{ ai_gen_id }}">
+            {{ block.settings.us_column_label }}
+            {% if block.settings.show_badge %}
+              <span class="ai-comparison-table__badge-{{ ai_gen_id }}">
+                {{ block.settings.badge_text }}
+              </span>
+            {% endif %}
+          </th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">
+            {{ block.settings.others_column_label }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in (1..10) %}
+          {% liquid
+            assign feature_key = 'feature_' | append: i
+            assign us_key = 'us_' | append: i
+            assign others_key = 'others_' | append: i
+
+            assign feature = block.settings[feature_key]
+            assign us_value = block.settings[us_key]
+            assign others_value = block.settings[others_key]
+          %}
+
+          {% if feature != blank %}
+            <tr class="ai-comparison-table__row-{{ ai_gen_id }}">
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {{ feature }}
+              </td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }} ai-comparison-table__us-cell-{{ ai_gen_id }}">
+                {% if us_value == 'check' %}
+                  <span class="ai-comparison-table__check-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif us_value == 'cross' %}
+                  <span class="ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ us_value }}
+                {% endif %}
+              </td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {% if others_value == 'check' %}
+                  <span class="ai-comparison-table__check-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif others_value == 'cross' %}
+                  <span class="ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ others_value }}
+                {% endif %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</comparison-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ComparisonTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('comparison-table-{{ ai_gen_id }}', ComparisonTable{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Us vs others table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why choose us?"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#171717"
+    },
+    {
+      "type": "header",
+      "content": "Column labels"
+    },
+    {
+      "type": "text",
+      "id": "feature_column_label",
+      "label": "Feature column",
+      "default": "Features"
+    },
+    {
+      "type": "text",
+      "id": "us_column_label",
+      "label": "Us column",
+      "default": "Us"
+    },
+    {
+      "type": "text",
+      "id": "others_column_label",
+      "label": "Others column",
+      "default": "Others"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Best"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#10b981"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1",
+      "label": "Feature name",
+      "default": "Free shipping"
+    },
+    {
+      "type": "select",
+      "id": "us_1",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_1",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2",
+      "label": "Feature name",
+      "default": "24/7 support"
+    },
+    {
+      "type": "select",
+      "id": "us_2",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_2",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3",
+      "label": "Feature name",
+      "default": "Money-back guarantee"
+    },
+    {
+      "type": "select",
+      "id": "us_3",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_3",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 4"
+    },
+    {
+      "type": "text",
+      "id": "feature_4",
+      "label": "Feature name",
+      "default": "Premium quality"
+    },
+    {
+      "type": "select",
+      "id": "us_4",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_4",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 5"
+    },
+    {
+      "type": "text",
+      "id": "feature_5",
+      "label": "Feature name",
+      "default": "Eco-friendly packaging"
+    },
+    {
+      "type": "select",
+      "id": "us_5",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_5",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 6"
+    },
+    {
+      "type": "text",
+      "id": "feature_6",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_6",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_6",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 7"
+    },
+    {
+      "type": "text",
+      "id": "feature_7",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_7",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_7",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 8"
+    },
+    {
+      "type": "text",
+      "id": "feature_8",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_8",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_8",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 9"
+    },
+    {
+      "type": "text",
+      "id": "feature_9",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_9",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_9",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Feature 10"
+    },
+    {
+      "type": "text",
+      "id": "feature_10",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "us_10",
+      "label": "Us",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "select",
+      "id": "others_10",
+      "label": "Others",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check mark"
+        },
+        {
+          "value": "cross",
+          "label": "Cross mark"
+        },
+        {
+          "value": "text",
+          "label": "Custom text"
+        }
+      ],
+      "default": "cross"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "table_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "Header font size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "body_font_size",
+      "label": "Body font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "Table background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header background",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "body_text_color",
+      "label": "Body text",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "us_column_background",
+      "label": "Us column header",
+      "default": "#171717"
+    },
+    {
+      "type": "color",
+      "id": "us_column_text_color",
+      "label": "Us column header text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "us_cell_background",
+      "label": "Us cell background",
+      "default": "#f0fdf4"
+    },
+    {
+      "type": "color",
+      "id": "check_background",
+      "label": "Check mark background",
+      "default": "#10b981"
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Check mark color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cross_background",
+      "label": "Cross mark background",
+      "default": "#ef4444"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross mark color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Us vs others table"
+    }
+  ]
+}
+{% endschema %}
