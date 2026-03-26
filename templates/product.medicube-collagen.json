@@ -263,7 +263,7 @@
         "heading_tLmq3W": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Effortless Overnight Glow",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -273,7 +273,7 @@
         "text_gTR73M": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Wake up to smoother, hydrated, and radiant skin without adding extra steps to your routine. Our formula works overnight to restore moisture and enhance your natural glow.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -281,23 +281,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_3HWk6y": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_tLmq3W",
-        "text_gTR73M",
-        "button_3HWk6y"
+        "text_gTR73M"
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
@@ -329,7 +317,7 @@
         "text_TgDAFd": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping </strong></em>",
+            "text": "Wake up to smoother, hydrated, and naturally glowing skin—effortlessly",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -363,7 +351,7 @@
         "heading_UhRWH6": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Deep Nourishment & Repair",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -373,7 +361,7 @@
         "text_Y8kzf9": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Designed to support your skin while you sleep, it helps improve texture, boost elasticity, and leave your skin feeling soft, fresh, and revitalized every morning.</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -381,23 +369,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_KhQdrd": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_UhRWH6",
-        "text_Y8kzf9",
-        "button_KhQdrd"
+        "text_Y8kzf9"
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
@@ -435,19 +411,19 @@
             "feature_column_label": "Feature",
             "us_column_label": "Us",
             "others_column_label": "Others",
-            "feature_1": "Free shipping",
+            "feature_1": "Deep Overnight Hydration",
             "feature_1_us": "check",
             "feature_1_others": "cross",
-            "feature_2": "24/7 support",
+            "feature_2": "Skin Barrier Support",
             "feature_2_us": "check",
             "feature_2_others": "cross",
-            "feature_3": "Money-back guarantee",
+            "feature_3": "Lightweight & Non-Greasy",
             "feature_3_us": "check",
             "feature_3_others": "cross",
-            "feature_4": "Premium quality",
+            "feature_4": "Visible Glow by Morning",
             "feature_4_us": "check",
             "feature_4_others": "cross",
-            "feature_5": "",
+            "feature_5": "Gentle on Skin",
             "feature_5_us": "check",
             "feature_5_others": "cross",
             "feature_6": "",
@@ -489,8 +465,8 @@
         "question_niAzCn": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Is your product safe?",
+            "text": "<p>Yes, our formula is made with skin-friendly ingredients and is safe for everyday use.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -498,8 +474,8 @@
         "question_CyqE3x": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How do I use it?",
+            "text": "<p>Apply an even layer to clean skin before bed and leave it on overnight.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -507,8 +483,8 @@
         "question_rjkQHd": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>When will I see results?</strong>",
+            "text": "<p>You may notice softer, more hydrated skin after the first use, with better results over time.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -516,17 +492,8 @@
         "question_jR3QXM": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_WMMFkm": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Is it suitable for all skin types?",
+            "text": "<p>Yes, it’s designed to work for most skin types, including sensitive skin.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -536,8 +503,7 @@
         "question_niAzCn",
         "question_CyqE3x",
         "question_rjkQHd",
-        "question_jR3QXM",
-        "question_WMMFkm"
+        "question_jR3QXM"
       ],
       "settings": {
         "style": "with-background",
