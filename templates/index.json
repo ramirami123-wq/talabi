@@ -67,10 +67,10 @@
             "show_rating": true
           }
         },
-        "description_UFdXNR": {
-          "type": "description",
+        "liquid_zRznVn": {
+          "type": "liquid",
           "settings": {
-            "text_size": "text-base"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">💧 Deep Overnight Hydration</span> – Replenish your skin with intense moisture while you sleep.<br><br>\n<span style=\"font-weight: bold;\">✨ Boosted Skin Elasticity</span> – Help improve firmness and support a smoother, more youthful look.<br><br>\n<span style=\"font-weight: bold;\">🌙 Wake Up Glowing</span> – Enjoy soft, radiant skin every morning with a refreshed, healthy finish.\n</div>"
           }
         },
         "variant_picker_n9LkTf": {
@@ -110,27 +110,20 @@
         "read_more_jQTpaq": {
           "type": "read_more",
           "settings": {}
-        },
-        "spinning_text_7rayyX": {
-          "type": "spinning_text",
-          "settings": {
-            "text": "Featured product"
-          }
         }
       },
       "block_order": [
         "title_TbV77z",
-        "description_UFdXNR",
+        "liquid_zRznVn",
         "variant_picker_n9LkTf",
         "buy_buttons_JiiTH7",
         "pickup_availability_cJFWpd",
         "share_LCp7kf",
-        "read_more_jQTpaq",
-        "spinning_text_7rayyX"
+        "read_more_jQTpaq"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "",
+        "product": "medicube-collagen-night-wrap-mask",
         "enable_sticky_info": true,
         "media_size": 66,
         "gallery_layout": "thumbnail",
