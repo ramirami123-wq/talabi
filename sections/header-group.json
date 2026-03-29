@@ -36,7 +36,7 @@
         "enable_country_selector": false,
         "invert_icons_selectors": false,
         "announcement_position": "center",
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
         "color_text": "#fafafa",
