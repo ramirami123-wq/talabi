@@ -35,7 +35,7 @@
         "enable_language_selector": false,
         "enable_country_selector": false,
         "invert_icons_selectors": false,
-        "announcement_position": "center",
+        "announcement_position": "start",
         "autoplay": true,
         "autoplay_speed": 5,
         "show_navigation": true,
