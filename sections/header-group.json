@@ -30,6 +30,7 @@
       "block_order": [
         "announcement-2"
       ],
+      "disabled": true,
       "settings": {
         "show_social": false,
         "enable_language_selector": false,
@@ -47,6 +48,41 @@
         "hide_homepage": false,
         "full_width": false,
         "rounded": true
+      }
+    },
+    "scrolling_text_VRgwKX": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_qF94CV": {
+          "type": "text",
+          "settings": {
+            "text": "Free Delivery!",
+            "text_size": 12,
+            "text_font": "body",
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "basic-underline"
+          }
+        }
+      },
+      "block_order": [
+        "text_qF94CV"
+      ],
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 50,
+        "enable_twin": false,
+        "enable_parallax": false,
+        "color_text": "#ffffff",
+        "color_background": "#dc731a",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 8,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
       }
     },
     "header": {
@@ -78,6 +114,7 @@
   },
   "order": [
     "announcement-bar",
+    "scrolling_text_VRgwKX",
     "header"
   ]
 }
