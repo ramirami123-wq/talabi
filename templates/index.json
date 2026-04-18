@@ -149,7 +149,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free Delivery</strong></em>",
+            "text": "",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -233,8 +233,8 @@
         "text_hAbYTa": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free Delivery</strong></em>",
-            "text_size": 160,
+            "text": "<em><strong>LIMITED TIME OFFER! UP TO 30% OFF ON ALL PRODUCTS</strong></em>",
+            "text_size": 84,
             "text_font": "body",
             "highlighted_text": "stencil",
             "highlighted_scribble": "circle"
