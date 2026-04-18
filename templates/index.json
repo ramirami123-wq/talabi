@@ -373,6 +373,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/model-in-neutral-colors-by-window.jpg",
         "image_height": "650px",
         "image_width": "medium",
         "layout": "image_first",
