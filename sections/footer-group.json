@@ -25,7 +25,7 @@
         "link_list-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "https://talabilb.shop/collections/all",
             "menu": "footer",
             "container_width": 50
           }
@@ -34,7 +34,7 @@
           "type": "brand_information",
           "settings": {
             "heading": "",
-            "button_label_1": "+961 70034408",
+            "button_label_1": "",
             "button_link_1": "https://wa.me/+96170034408",
             "button_label_2": "",
             "button_link_2": "mailto:hello@domain.com",
