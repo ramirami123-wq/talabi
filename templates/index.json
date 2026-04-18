@@ -358,7 +358,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP ALL",
-            "button_link": "",
+            "button_link": "shopify://pages/contact",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
