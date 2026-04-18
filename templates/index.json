@@ -56,94 +56,6 @@
         "parallax_direction": "zoom"
       }
     },
-    "featured_product_BUd6ic": {
-      "type": "featured-product",
-      "blocks": {
-        "title_TbV77z": {
-          "type": "title",
-          "settings": {
-            "title_size": "product-title-md",
-            "title_size_mobile": "product-title-md",
-            "show_price": true,
-            "show_rating": true
-          }
-        },
-        "liquid_zRznVn": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">💧 Deep Overnight Hydration</span> – Replenish your skin with intense moisture while you sleep.<br><br>\n<span style=\"font-weight: bold;\">✨ Boosted Skin Elasticity</span> – Help improve firmness and support a smoother, more youthful look.<br><br>\n<span style=\"font-weight: bold;\">🌙 Wake Up Glowing</span> – Enjoy soft, radiant skin every morning with a refreshed, healthy finish.\n</div>"
-          }
-        },
-        "variant_picker_n9LkTf": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "color_swatch_type": "color",
-            "size_chart": ""
-          }
-        },
-        "buy_buttons_JiiTH7": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "enable_back_in_stock": false,
-            "show_back_in_stock_name": false,
-            "show_back_in_stock_phone": false
-          }
-        },
-        "pickup_availability_cJFWpd": {
-          "type": "pickup_availability",
-          "settings": {}
-        },
-        "share_LCp7kf": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share",
-            "show_help_desk": true,
-            "help_label": "Need help?",
-            "help_page": ""
-          }
-        },
-        "read_more_jQTpaq": {
-          "type": "read_more",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "title_TbV77z",
-        "liquid_zRznVn",
-        "variant_picker_n9LkTf",
-        "buy_buttons_JiiTH7",
-        "pickup_availability_cJFWpd",
-        "share_LCp7kf",
-        "read_more_jQTpaq"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "medicube-collagen-night-wrap-mask",
-        "enable_sticky_info": true,
-        "media_size": 66,
-        "gallery_layout": "thumbnail",
-        "thumbnail_position": "beside",
-        "image_ratio": "adapt_first",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "mobile_layout": "partial",
-        "image_ratio_mobile": "adapt_first",
-        "mobile_thumbnail": false,
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "scrolling-text-1": {
       "type": "scrolling-text",
       "blocks": {
@@ -404,7 +316,6 @@
   },
   "order": [
     "slideshow_a9iCWL",
-    "featured_product_BUd6ic",
     "scrolling-text-1",
     "rich-text-1",
     "scrolling_text_DzpT8d",
