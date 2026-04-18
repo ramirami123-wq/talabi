@@ -377,23 +377,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_KhQdrd": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_UhRWH6",
-        "text_Y8kzf9",
-        "button_KhQdrd"
+        "text_Y8kzf9"
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {

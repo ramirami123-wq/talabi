@@ -43,7 +43,7 @@
         "liquid_EGCKUB": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">🌙 Overnight Skin Repair</span> – Works while you sleep to improve elasticity and deeply nourish your skin.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Collagen Wrapping Film</span> – Forms a lightweight layer that locks in moisture and boosts firmness overnight.<br><br>\n\n<span style=\"font-weight: bold;\">💧 Intense Hydration</span> – Delivers long-lasting moisture for plumper, smoother-looking skin by morning.<br><br>\n\n<span style=\"font-weight: bold;\">🌿 Peel-Off Glow Finish</span> – Removes easily in one piece, revealing refreshed, soft, and radiant skin.\n\n</div>"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">🧼 Deep Pore Cleansing</span> – Effectively removes blackheads, dirt, and excess oil from deep within your pores.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Blackhead Removal from Root</span> – Targets stubborn blackheads and lifts them out for visibly clearer skin.<br><br>\n\n<span style=\"font-weight: bold;\">⚡ Fast & Easy to Use</span> – Simple peel-off application with quick results in just minutes.<br><br>\n\n<span style=\"font-weight: bold;\">💧 Smoother Skin Finish</span> – Leaves your nose area feeling clean, smooth, and refreshed after every use.\n\n</div>"
           }
         },
         "countdown": {
@@ -237,7 +237,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Let your skin do the work while you sleep",
+            "text": "Clear skin starts with clean pores",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -271,7 +271,7 @@
         "heading_tLmq3W": {
           "type": "heading",
           "settings": {
-            "heading": "Effortless Nighttime Skincare Upgrade",
+            "heading": "Clear Pores, Confident Skin",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -281,7 +281,7 @@
         "text_gTR73M": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>With its unique collagen wrapping film, this mask seals in moisture and nutrients for long-lasting results. Simply apply, sleep, and peel off to reveal refreshed, soft, and revitalized skin.<br/><br/></p>",
+            "text": "<p><br/>Say goodbye to stubborn blackheads with a solution that actually works. These pore strips deeply cleanse and lift impurities from the root, leaving your skin visibly smoother and clearer after every use.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -297,7 +297,7 @@
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1763644480_phpto35cefdb3hu7Rlnt8l.png",
+        "image": "shopify://shop_images/7613644758_php60l2cks9u2jicnb9vYg.webp",
         "image_ratio": "portrait",
         "image_width": "medium",
         "layout": "image_first",
@@ -359,7 +359,7 @@
         "heading_UhRWH6": {
           "type": "heading",
           "settings": {
-            "heading": "Wake Up to Firmer, Glowing Skin",
+            "heading": "Deep Clean in Minutes",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -369,7 +369,7 @@
         "text_Y8kzf9": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>This overnight mask works while you sleep, helping improve skin elasticity and lock in deep hydration. Wake up to smoother, plumper, and more radiant-looking skin every morning.<br/><br/></p>",
+            "text": "<p><br/>Designed to target clogged pores, this treatment helps remove excess oil and buildup while refining your skin’s texture. Quick, easy, and effective — perfect for your weekly skincare routine.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -385,7 +385,7 @@
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1763644481_phpp5fcuogr96arb2mcQhR.jpg",
+        "image": "shopify://shop_images/IMG_4100.jpg",
         "image_ratio": "portrait",
         "image_width": "medium",
         "layout": "image_first",
@@ -419,19 +419,19 @@
             "feature_column_label": "Feature",
             "us_column_label": "Us",
             "others_column_label": "Others",
-            "feature_1": "Overnight Skin Repair",
+            "feature_1": "Removes Blackheads from Root",
             "feature_1_us": "check",
             "feature_1_others": "cross",
-            "feature_2": "Collagen Wrapping Technology",
+            "feature_2": "Deep Pore Cleansing",
             "feature_2_us": "check",
             "feature_2_others": "cross",
-            "feature_3": "Deep Hydration",
+            "feature_3": "Quick & Easy to Use",
             "feature_3_us": "check",
             "feature_3_others": "cross",
-            "feature_4": "Easy Peel-Off Application",
+            "feature_4": "Visible Results Fast",
             "feature_4_us": "check",
             "feature_4_others": "cross",
-            "feature_5": "",
+            "feature_5": "Smooth Skin Finish",
             "feature_5_us": "check",
             "feature_5_others": "cross",
             "feature_6": "",
@@ -473,8 +473,8 @@
         "question_niAzCn": {
           "type": "question",
           "settings": {
-            "title": "How do I use the mask?",
-            "text": "<p><br/>Apply an even layer to clean, dry skin as the last step of your nighttime routine. Leave it on overnight and gently peel off in the morning.<br/><br/></p>",
+            "title": "How do I use it?",
+            "text": "<p>Clean your face, apply the strip to your nose, leave it on until dry, then gently peel it off.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -482,8 +482,8 @@
         "question_CyqE3x": {
           "type": "question",
           "settings": {
-            "title": "What does it do?",
-            "text": "<p>It helps improve skin elasticity, deeply hydrate, and leave your skin looking smoother and more radiant.</p>",
+            "title": "What does it remove?",
+            "text": "<p>It helps remove blackheads, excess oil, and dirt from clogged pores.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -491,8 +491,8 @@
         "question_rjkQHd": {
           "type": "question",
           "settings": {
-            "title": "Is it suitable for all skin types?",
-            "text": "<p>Yes, it’s designed to be gentle and suitable for most skin types.</p>",
+            "title": "How often should I use it?",
+            "text": "<p>Use 1–2 times per week for best results.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -500,8 +500,8 @@
         "question_jR3QXM": {
           "type": "question",
           "settings": {
-            "title": "How often should I use it?",
-            "text": "<p>Use 2–3 times a week or as needed for best results.</p>",
+            "title": "Is it suitable for all skin types?",
+            "text": "<p>Yes, but if you have very sensitive skin, test on a small area first.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -509,8 +509,8 @@
         "question_WMMFkm": {
           "type": "question",
           "settings": {
-            "title": "Does it feel heavy on the skin?",
-            "text": "<p>No, it forms a lightweight layer that feels comfortable while you sleep.</p>",
+            "title": "How long does it take to work?",
+            "text": "<p>You’ll see results immediately after removing the strip.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
