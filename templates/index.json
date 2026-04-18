@@ -36,7 +36,7 @@
         "autoplay_speed": 5,
         "show_navigation": true,
         "image_height": "600px",
-        "content_width": "large",
+        "content_width": "medium",
         "image_height_mobile": "200px",
         "color_text": "#ffffff",
         "color_background": "#ffffff",
