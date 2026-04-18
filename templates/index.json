@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/IMG_4098.jpg",
             "heading": "",
-            "heading_size": "title-md",
+            "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
             "button_link": "",
@@ -33,11 +33,11 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "autoplay": false,
-        "autoplay_speed": 9,
+        "autoplay_speed": 6,
         "show_navigation": true,
-        "image_height": "600px",
+        "image_height": "450px",
         "content_width": "small",
-        "image_height_mobile": "600px",
+        "image_height_mobile": "400px",
         "color_text": "#ffffff",
         "color_background": "#ffffff",
         "gradient_background": "",
