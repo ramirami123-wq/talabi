@@ -35,7 +35,7 @@
         "autoplay": false,
         "autoplay_speed": 7,
         "show_navigation": true,
-        "image_height": "100vh",
+        "image_height": "900px",
         "content_width": "large",
         "image_height_mobile": "auto",
         "color_text": "#ffffff",
