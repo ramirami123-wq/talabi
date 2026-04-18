@@ -297,7 +297,7 @@
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/7613644758_php60l2cks9u2jicnb9vYg.webp",
+        "image_2": "shopify://shop_images/IMG_4103.jpg",
         "image_ratio": "portrait",
         "image_width": "medium",
         "layout": "image_first",
