@@ -43,7 +43,7 @@
         "liquid_EGCKUB": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">💧 Deep Overnight Hydration</span> – Replenish your skin with intense moisture while you sleep.<br><br>\n<span style=\"font-weight: bold;\">✨ Boosted Skin Elasticity</span> – Help improve firmness and support a smoother, more youthful look.<br><br>\n<span style=\"font-weight: bold;\">🌙 Wake Up Glowing</span> – Enjoy soft, radiant skin every morning with a refreshed, healthy finish.\n</div>"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">🌙 Overnight Skin Repair</span> – Works while you sleep to improve elasticity and deeply nourish your skin.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Collagen Wrapping Film</span> – Forms a lightweight layer that locks in moisture and boosts firmness overnight.<br><br>\n\n<span style=\"font-weight: bold;\">💧 Intense Hydration</span> – Delivers long-lasting moisture for plumper, smoother-looking skin by morning.<br><br>\n\n<span style=\"font-weight: bold;\">🌿 Peel-Off Glow Finish</span> – Removes easily in one piece, revealing refreshed, soft, and radiant skin.\n\n</div>"
           }
         },
         "countdown": {
@@ -237,7 +237,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<em><strong>Free shipping </strong></em>",
+            "text": "Let your skin do the work while you sleep",
             "text_size": 160,
             "text_font": "body",
             "highlighted_text": "stencil",
@@ -271,7 +271,7 @@
         "heading_tLmq3W": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Effortless Nighttime Skincare Upgrade",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -281,7 +281,7 @@
         "text_gTR73M": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p><br/>With its unique collagen wrapping film, this mask seals in moisture and nutrients for long-lasting results. Simply apply, sleep, and peel off to reveal refreshed, soft, and revitalized skin.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -289,23 +289,11 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "button_3HWk6y": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
         }
       },
       "block_order": [
         "heading_tLmq3W",
-        "text_gTR73M",
-        "button_3HWk6y"
+        "text_gTR73M"
       ],
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
@@ -371,7 +359,7 @@
         "heading_UhRWH6": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Wake Up to Firmer, Glowing Skin",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -381,7 +369,7 @@
         "text_Y8kzf9": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p><br/>This overnight mask works while you sleep, helping improve skin elasticity and lock in deep hydration. Wake up to smoother, plumper, and more radiant-looking skin every morning.<br/><br/></p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -443,16 +431,16 @@
             "feature_column_label": "Feature",
             "us_column_label": "Us",
             "others_column_label": "Others",
-            "feature_1": "Free shipping",
+            "feature_1": "Overnight Skin Repair",
             "feature_1_us": "check",
             "feature_1_others": "cross",
-            "feature_2": "24/7 support",
+            "feature_2": "Collagen Wrapping Technology",
             "feature_2_us": "check",
             "feature_2_others": "cross",
-            "feature_3": "Money-back guarantee",
+            "feature_3": "Deep Hydration",
             "feature_3_us": "check",
             "feature_3_others": "cross",
-            "feature_4": "Premium quality",
+            "feature_4": "Easy Peel-Off Application",
             "feature_4_us": "check",
             "feature_4_others": "cross",
             "feature_5": "",
@@ -497,8 +485,8 @@
         "question_niAzCn": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How do I use the mask?",
+            "text": "<p><br/>Apply an even layer to clean, dry skin as the last step of your nighttime routine. Leave it on overnight and gently peel off in the morning.<br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -506,8 +494,8 @@
         "question_CyqE3x": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "What does it do?",
+            "text": "<p>It helps improve skin elasticity, deeply hydrate, and leave your skin looking smoother and more radiant.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -515,8 +503,8 @@
         "question_rjkQHd": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Is it suitable for all skin types?",
+            "text": "<p>Yes, it’s designed to be gentle and suitable for most skin types.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -524,8 +512,8 @@
         "question_jR3QXM": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How often should I use it?",
+            "text": "<p>Use 2–3 times a week or as needed for best results.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -533,8 +521,8 @@
         "question_WMMFkm": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Does it feel heavy on the skin?",
+            "text": "<p>No, it forms a lightweight layer that feels comfortable while you sleep.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
