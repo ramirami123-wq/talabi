@@ -52,7 +52,7 @@
         "full_width": true,
         "rounded": false,
         "enable_parallax": false,
-        "parallax_direction": "vertical"
+        "parallax_direction": "zoom"
       }
     },
     "featured_product_BUd6ic": {
