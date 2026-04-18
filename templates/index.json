@@ -37,7 +37,7 @@
         "show_navigation": true,
         "image_height": "700px",
         "content_width": "large",
-        "image_height_mobile": "auto",
+        "image_height_mobile": "100vh",
         "color_text": "#ffffff",
         "color_background": "#ffffff",
         "gradient_background": "",
