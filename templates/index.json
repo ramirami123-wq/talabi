@@ -33,7 +33,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "autoplay": false,
-        "autoplay_speed": 9,
+        "autoplay_speed": 7,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "large",
