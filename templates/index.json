@@ -19,7 +19,7 @@
             "image_mobile": "shopify://shop_images/IMG_4101.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h5",
+            "heading_tag": "h2",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
