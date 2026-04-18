@@ -15,7 +15,8 @@
         "image_xALyzr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_4098.jpg",
+            "image": "shopify://shop_images/IMG_4100.jpg",
+            "image_mobile": "shopify://shop_images/IMG_4101.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
