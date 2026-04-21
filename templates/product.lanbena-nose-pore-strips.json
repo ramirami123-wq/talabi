@@ -318,7 +318,7 @@
           "type": "text",
           "settings": {
             "text": "<em><strong>Free shipping </strong></em>",
-            "text_size": 160,
+            "text_size": 164,
             "text_font": "body",
             "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
@@ -724,8 +724,8 @@
     "images_with_text_P7NjP4",
     "scrolling_text_43FRrM",
     "177297751426519bd7",
-    "images_with_text_WtcxDF",
     "177456451780b5da70",
+    "images_with_text_WtcxDF",
     "faq",
     "recently-viewed",
     "product-recommendations",
