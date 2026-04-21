@@ -345,6 +345,38 @@
         "rounded": false
       }
     },
+    "177297751426519bd7": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_WVk7pj": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_WVk7pj"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "images_with_text_WtcxDF": {
       "type": "images-with-text",
       "blocks": {
@@ -610,38 +642,6 @@
         "rounded": true
       }
     },
-    "177297751426519bd7": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_WVk7pj": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_WVk7pj"
-      ],
-      "settings": {
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "multicolumn_with_icons_8yGaqU": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -723,9 +723,9 @@
     "scrolling-text",
     "images_with_text_P7NjP4",
     "scrolling_text_43FRrM",
+    "177297751426519bd7",
     "images_with_text_WtcxDF",
     "177456451780b5da70",
-    "177297751426519bd7",
     "faq",
     "recently-viewed",
     "product-recommendations",
