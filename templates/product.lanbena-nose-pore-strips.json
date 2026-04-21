@@ -320,7 +320,7 @@
             "text": "<em><strong>Free shipping </strong></em>",
             "text_size": 160,
             "text_font": "body",
-            "highlighted_text": "stencil",
+            "highlighted_text": "half_text",
             "highlighted_scribble": "circle"
           }
         }
