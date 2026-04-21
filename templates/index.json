@@ -186,8 +186,8 @@
           "settings": {
             "text": "<em><strong>LIMITED TIME OFFER! UP TO 30% OFF ON ALL PRODUCTS</strong></em>",
             "text_size": 84,
-            "text_font": "body",
-            "highlighted_text": "stencil",
+            "text_font": "heading",
+            "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
           }
         }
@@ -286,7 +286,7 @@
         "heading_g8wiVU": {
           "type": "heading",
           "settings": {
-            "heading": "join over 100 satisfied customers who love our skincare products",
+            "heading": "Join over 100 satisfied customers who love our skincare products",
             "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -296,7 +296,7 @@
         "text_tpDzq7": {
           "type": "text",
           "settings": {
-            "text": "<p>your beauty deserves the best authentic effective from top global brands</p>",
+            "text": "<p>Your beauty deserves the best authentic effective from top global brands</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
