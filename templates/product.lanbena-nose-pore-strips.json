@@ -345,92 +345,6 @@
         "rounded": false
       }
     },
-    "177297751426519bd7": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_WVk7pj": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_WVk7pj"
-      ],
-      "settings": {
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "images_with_text_WtcxDF": {
-      "type": "images-with-text",
-      "blocks": {
-        "heading_UhRWH6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Deep Clean in Minutes",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_Y8kzf9": {
-          "type": "text",
-          "settings": {
-            "text": "<p><br/>Designed to target clogged pores, this treatment helps remove excess oil and buildup while refining your skin’s texture. Quick, easy, and effective — perfect for your weekly skincare routine.<br/><br/></p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_UhRWH6",
-        "text_Y8kzf9"
-      ],
-      "name": "t:sections.images-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/IMG_4100.jpg",
-        "image_ratio": "portrait",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
-      }
-    },
     "177456451780b5da70": {
       "type": "_blocks",
       "blocks": {
@@ -490,6 +404,60 @@
         "ai_gen_block_39181f9_aNN6ax"
       ],
       "settings": {}
+    },
+    "images_with_text_WtcxDF": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_UhRWH6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Deep Clean in Minutes",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Y8kzf9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Designed to target clogged pores, this treatment helps remove excess oil and buildup while refining your skin’s texture. Quick, easy, and effective — perfect for your weekly skincare routine.<br/><br/></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UhRWH6",
+        "text_Y8kzf9"
+      ],
+      "name": "t:sections.images-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/IMG_4100.jpg",
+        "image_ratio": "portrait",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
     },
     "faq": {
       "type": "faq",
@@ -642,6 +610,38 @@
         "rounded": true
       }
     },
+    "177297751426519bd7": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_WVk7pj": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_WVk7pj"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "multicolumn_with_icons_8yGaqU": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -723,11 +723,11 @@
     "scrolling-text",
     "images_with_text_P7NjP4",
     "scrolling_text_43FRrM",
-    "177297751426519bd7",
     "177456451780b5da70",
     "images_with_text_WtcxDF",
     "faq",
     "recently-viewed",
+    "177297751426519bd7",
     "product-recommendations",
     "multicolumn_with_icons_8yGaqU"
   ]
