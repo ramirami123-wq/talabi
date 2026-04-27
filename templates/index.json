@@ -11,30 +11,10 @@
   "sections": {
     "slideshow_a9iCWL": {
       "type": "slideshow",
-      "blocks": {
-        "image_xALyzr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_4100.jpg",
-            "image_mobile": "shopify://shop_images/IMG_4101.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "image_xALyzr"
-      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "autoplay": false,
-        "autoplay_speed": 6,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "100vh",
         "content_width": "large",
