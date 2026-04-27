@@ -75,7 +75,7 @@
       "name": "t:sections.image-with-text-overlay.presets.name",
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/IMG_4098.jpg",
+        "image": "shopify://shop_images/IMG_4100.jpg",
         "image_height": "100vh",
         "content_width": "large",
         "content_position": "md:items-end md:justify-start",
