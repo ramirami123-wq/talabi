@@ -113,21 +113,6 @@
     },
     "17772946037649b29b": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_257c53c_ehcaKJ": {
-          "type": "ai_gen_block_257c53c",
-          "settings": {
-            "image": "shopify://shop_images/IMG_4101.jpg",
-            "aspect_ratio": "16/9",
-            "border_radius": 8,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_257c53c_ehcaKJ"
-      ],
       "settings": {}
     },
     "177729113612fe1ae7": {
