@@ -11,12 +11,32 @@
   "sections": {
     "slideshow_a9iCWL": {
       "type": "slideshow",
+      "blocks": {
+        "image_VtTYzB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4101.jpg",
+            "image_mobile": "shopify://shop_images/IMG_4101.jpg",
+            "heading": "Image slide",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "p",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_VtTYzB"
+      ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "autoplay": false,
         "autoplay_speed": 3,
         "show_navigation": true,
-        "image_height": "100vh",
+        "image_height": "adapt",
         "content_width": "large",
         "image_height_mobile": "100vh",
         "color_text": "#ffffff",
