@@ -290,8 +290,7 @@
       "name": "t:sections.images-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/IMG_4407.jpg",
-        "image_2": "shopify://shop_images/IMG_4407.jpg",
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "image_width": "medium",
         "layout": "image_first",
         "text_alignment": "left",
