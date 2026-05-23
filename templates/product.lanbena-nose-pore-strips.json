@@ -295,7 +295,7 @@
         "layout": "image_first",
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "color_text": "",
+        "color_text": "#70702e",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
