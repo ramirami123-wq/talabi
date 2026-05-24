@@ -139,56 +139,6 @@
         "rounded": false
       }
     },
-    "rich-text-1": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe skincare should feel as beautiful as it looks. Our mission is simple: to create high-quality, effective products that elevate your daily routine into a moment of self-care.</p><p>Inspired by modern beauty innovation and gentle, skin-loving ingredients, Talabi is dedicated to helping you achieve healthy, radiant skin—without complexity. Every formula is thoughtfully designed to hydrate, nourish, and support your skin overnight, so you wake up feeling refreshed and confident.</p><p>We focus on what truly matters: clean formulations, visible results, and a luxurious experience you can trust. Whether you’re starting your skincare journey or refining your routine, Talabi is here to bring out your natural glow—one night at a time.</p><p><strong>Talabi — Where skincare meets simplicity and glow becomes your signature.</strong></p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "At <strong>Talabi</strong>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
-        "color_text": "#70702e",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "scrolling_text_DzpT8d": {
       "type": "scrolling-text",
       "blocks": {
@@ -368,7 +318,6 @@
     "scrolling-text-1",
     "image_with_text_overlay_ACawQF",
     "featured_collection_qa7m9D",
-    "rich-text-1",
     "scrolling_text_DzpT8d",
     "faq_PdHbLe",
     "image_with_text_w4Qxfy"
