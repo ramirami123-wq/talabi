@@ -14779,3 +14779,6 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
     }
   }
 }
+.flickity-page-dots {
+  display: none !important;
+}
