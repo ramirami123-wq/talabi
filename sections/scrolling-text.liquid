@@ -23,7 +23,7 @@
             assign with_gradient = true
           endif
         -%}
-        <div class="marquee{% if with_dot %} with-dot{% endif %} flex items-center flex-auto whitespace-nowrap">
+        <div class="marquee flex items-center flex-auto whitespace-nowrap">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'text' -%}
