@@ -59,8 +59,8 @@
             "text": "Free Delivery all over lebanon",
             "text_size": 12,
             "text_font": "body",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "basic-underline"
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
