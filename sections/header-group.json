@@ -70,8 +70,8 @@
       "name": "t:sections.scrolling-text.presets.name",
       "settings": {
         "direction": "left",
-        "speed": 24,
-        "grid_horizontal": 80,
+        "speed": 28,
+        "grid_horizontal": 105,
         "enable_twin": false,
         "enable_parallax": false,
         "color_text": "#ffffff",
