@@ -83,7 +83,7 @@
         "color_highlight": "#ffffff",
         "gradient_highlight": "",
         "padding_top": 16,
-        "padding_bottom": 12,
+        "padding_bottom": 4,
         "divider": false,
         "rounded": false
       }
