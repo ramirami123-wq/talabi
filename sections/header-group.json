@@ -106,7 +106,7 @@
         "color_text": "#000000",
         "color_background": "#ffffff",
         "padding_top": 30,
-        "padding_bottom": 16,
+        "padding_bottom": 14,
         "full_width": true,
         "rounded": true
       }
