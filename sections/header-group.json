@@ -79,10 +79,10 @@
       ],
       "name": "Announcement Slider",
       "settings": {
-        "background_color": "#F9E8E8",
-        "text_color": "#4A3F3F",
+        "background_color": "#f9e8e8",
+        "text_color": "#4a3f3f",
         "desktop_height": 41,
-        "mobile_height": 32,
+        "mobile_height": 41,
         "text_size": 13,
         "mobile_text_size": 12,
         "speed": 5
