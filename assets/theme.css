@@ -14780,38 +14780,3 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
   }
 }
 
-/* Talabi - compact header without breaking layout */
-
-/* 1. Reduce pink delivery bar height */
-.shopify-section-group-header-group .scrolling-text-section .section--padding {
-  padding-block-start: 6px !important;
-  padding-block-end: 6px !important;
-}
-
-/* 2. Keep white navbar stable but smaller */
-.shopify-section-group-header-group .header-section .header {
-  min-height: 50px !important;
-  padding-block-start: 8px !important;
-  padding-block-end: 8px !important;
-  box-sizing: border-box;
-}
-
-/* 3. Reduce logo size safely without collapsing navbar */
-.shopify-section-group-header-group .header__logo img.logo {
-  max-width: 95px !important;
-  width: auto !important;
-  height: auto !important;
-}
-
-/* 4. Keep menu and icons normal */
-@media screen and (min-width: 1024px) {
-  .shopify-section-group-header-group .header__menu > ul.with-block .menu__item {
-    height: 42px !important;
-    padding-inline: 18px !important;
-  }
-
-  .shopify-section-group-header-group .header__buttons > :is(a, button) {
-    width: 44px !important;
-    height: 44px !important;
-  }
-}
