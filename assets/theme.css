@@ -14790,7 +14790,7 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 
 /* 2. Keep white navbar stable but smaller */
 .shopify-section-group-header-group .header-section .header {
-  min-height: 68px !important;
+  min-height: 50px !important;
   padding-block-start: 8px !important;
   padding-block-end: 8px !important;
   box-sizing: border-box;
