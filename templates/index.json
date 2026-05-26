@@ -293,7 +293,7 @@
         "content_position": "align-self-center",
         "image_height_mobile": "auto",
         "text_alignment_mobile": "left",
-        "color_text": "#70702e",
+        "color_text": "#000000",
         "color_background": "",
         "gradient_background": "",
         "color_background_2": "",
