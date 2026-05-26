@@ -50,6 +50,44 @@
         "rounded": true
       }
     },
+    "talabi_announcement_slider_qqnn8D": {
+      "type": "talabi-announcement-slider",
+      "blocks": {
+        "announcement_DJzcrR": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Delivery all over Lebanon"
+          }
+        },
+        "announcement_jtYiGn": {
+          "type": "announcement",
+          "settings": {
+            "text": "Cash on Delivery Available"
+          }
+        },
+        "announcement_YzfA7g": {
+          "type": "announcement",
+          "settings": {
+            "text": "Fast Delivery Across Lebanon"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_DJzcrR",
+        "announcement_jtYiGn",
+        "announcement_YzfA7g"
+      ],
+      "name": "Announcement Slider",
+      "settings": {
+        "background_color": "#F9E8E8",
+        "text_color": "#4A3F3F",
+        "desktop_height": 41,
+        "mobile_height": 32,
+        "text_size": 13,
+        "mobile_text_size": 12,
+        "speed": 5
+      }
+    },
     "scrolling_text_VRgwKX": {
       "type": "scrolling-text",
       "blocks": {
@@ -67,6 +105,7 @@
       "block_order": [
         "text_qF94CV"
       ],
+      "disabled": true,
       "custom_css": [
         ".scrolling-text__item {font-family: \"Poppins\", sans-serif; font-size: 13px;}"
       ],
@@ -142,44 +181,6 @@
       ],
       "name": "Image",
       "settings": {}
-    },
-    "talabi_announcement_slider_qqnn8D": {
-      "type": "talabi-announcement-slider",
-      "blocks": {
-        "announcement_DJzcrR": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free Delivery all over Lebanon"
-          }
-        },
-        "announcement_jtYiGn": {
-          "type": "announcement",
-          "settings": {
-            "text": "Cash on Delivery Available"
-          }
-        },
-        "announcement_YzfA7g": {
-          "type": "announcement",
-          "settings": {
-            "text": "Fast Delivery Across Lebanon"
-          }
-        }
-      },
-      "block_order": [
-        "announcement_DJzcrR",
-        "announcement_jtYiGn",
-        "announcement_YzfA7g"
-      ],
-      "name": "Announcement Slider",
-      "settings": {
-        "background_color": "#F9E8E8",
-        "text_color": "#4A3F3F",
-        "desktop_height": 41,
-        "mobile_height": 32,
-        "text_size": 13,
-        "mobile_text_size": 12,
-        "speed": 5
-      }
     }
   },
   "order": [
