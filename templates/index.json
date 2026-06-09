@@ -313,22 +313,18 @@
         "parallax_direction": "vertical"
       }
     },
-    "1781037651d1c71421": {
+    "178103859210bcbf65": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_videos_carousel_xKBeDX": {
+        "judge_me_reviews_videos_carousel_GrUKW6": {
           "type": "shopify://apps/judge-me-reviews/blocks/videos_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "show_sample_reviews": true,
             "reviews_selection": "all",
-            "products": [
-              "centella",
-              "lanbena-nose-pore-strips",
-              "medicube-collagen-night-wrap-mask"
-            ],
+            "products": [],
             "star_rating": "all",
             "review_type": "photo_and_video",
-            "max_reviews": 30,
+            "max_reviews": 20,
             "show_reviewer_name": true,
             "stars_size": "medium",
             "text_size": "medium",
@@ -352,7 +348,7 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_videos_carousel_xKBeDX"
+        "judge_me_reviews_videos_carousel_GrUKW6"
       ],
       "settings": {
         "color_text": "",
@@ -379,6 +375,6 @@
     "scrolling_text_DzpT8d",
     "faq_PdHbLe",
     "image_with_text_w4Qxfy",
-    "1781037651d1c71421"
+    "178103859210bcbf65"
   ]
 }
