@@ -316,8 +316,8 @@
     "1781037651d1c71421": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_cards_carousel_ycyA3c": {
-          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "judge_me_reviews_videos_carousel_xKBeDX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/videos_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "show_sample_reviews": true,
             "reviews_selection": "all",
@@ -327,33 +327,32 @@
               "medicube-collagen-night-wrap-mask"
             ],
             "star_rating": "all",
-            "show_review_media": true,
-            "display_order": "media_first",
-            "no_image_fallback": "product_image",
-            "max_reviews": 20,
-            "review_length": "medium",
-            "text_size": "medium",
-            "image_ratio": "1",
-            "reviews_shown": 4,
+            "review_type": "photo_and_video",
+            "max_reviews": 30,
             "show_reviewer_name": true,
-            "show_product_name": true,
-            "hide_arrows_mobile": true,
-            "arrows_position": "sides",
+            "stars_size": "medium",
+            "text_size": "medium",
+            "arrows_position": "bottom",
             "max_width": 1100,
             "corner_styling": "soft",
             "header_text_color": "#000000",
-            "text_color": "#000000",
-            "card_color": "#F9F9F9",
+            "card_color": "#7D7D7D",
             "stars_color": "",
+            "text_color": "#FFFFFF",
             "arrows_color": "#000000",
+            "show_drop_shadow": false,
+            "show_border": false,
+            "border_color": "#108474",
+            "autoplay_media": true,
             "transition_speed": 5,
-            "header_text": "Customers are saying",
+            "carousel_style": "highlight",
+            "header_text": "Real customer stories",
             "show_average_rating": true
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_cards_carousel_ycyA3c"
+        "judge_me_reviews_videos_carousel_xKBeDX"
       ],
       "settings": {
         "color_text": "",
