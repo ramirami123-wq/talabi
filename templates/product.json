@@ -715,6 +715,33 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "1781125455fec7d02d": {
+      "type": "apps",
+      "blocks": {
+        "aov_ai_bundle_offer_inline_gmVtQq": {
+          "type": "shopify://apps/aov-ai-bundle/blocks/offer-inline/0335d423-143c-4ad7-b224-99a1db74a9ee",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "aov_ai_bundle_offer_inline_gmVtQq"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -729,6 +756,7 @@
     "product-recommendations",
     "recently-viewed",
     "177297751426519bd7",
-    "multicolumn_with_icons_8yGaqU"
+    "multicolumn_with_icons_8yGaqU",
+    "1781125455fec7d02d"
   ]
 }
