@@ -76,7 +76,7 @@
             "inventory_threshold": 15,
             "show_inventory_transfer": true,
             "show_inventory_quantity": "low",
-            "color_scheme": "accent-2"
+            "color_scheme": "accent-1"
           }
         },
         "liquid_ewrrAR": {
