@@ -22,14 +22,6 @@
             "enable_follow_on_shop": false
           }
         },
-        "link_list-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "talabi.lb",
-            "menu": "footer",
-            "container_width": 50
-          }
-        },
         "brand_information": {
           "type": "brand_information",
           "settings": {
@@ -48,7 +40,6 @@
       },
       "block_order": [
         "logo_social",
-        "link_list-1",
         "brand_information"
       ],
       "settings": {
