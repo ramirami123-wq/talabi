@@ -111,10 +111,6 @@
         "sticky_buy_button": {
           "type": "sticky_buy_button",
           "settings": {}
-        },
-        "aov_ai_bundle_offer_inline_KVGx9E": {
-          "type": "shopify://apps/aov-ai-bundle/blocks/offer-inline/0335d423-143c-4ad7-b224-99a1db74a9ee",
-          "settings": {}
         }
       },
       "block_order": [
@@ -130,8 +126,7 @@
         "pickup_availability",
         "share",
         "complementary",
-        "sticky_buy_button",
-        "aov_ai_bundle_offer_inline_KVGx9E"
+        "sticky_buy_button"
       ],
       "settings": {
         "enable_sticky_info": true,
