@@ -76,7 +76,7 @@
             "inventory_threshold": 15,
             "show_inventory_transfer": true,
             "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
+            "color_scheme": "accent-2"
           }
         },
         "liquid_ewrrAR": {
@@ -530,7 +530,7 @@
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "#ffffff",
-        "color_background": "#e11d48",
+        "color_background": "#000000",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
