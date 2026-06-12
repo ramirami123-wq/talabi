@@ -718,15 +718,6 @@
     },
     "1781125455fec7d02d": {
       "type": "apps",
-      "blocks": {
-        "aov_ai_bundle_offer_inline_gmVtQq": {
-          "type": "shopify://apps/aov-ai-bundle/blocks/offer-inline/0335d423-143c-4ad7-b224-99a1db74a9ee",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "aov_ai_bundle_offer_inline_gmVtQq"
-      ],
       "settings": {
         "color_text": "",
         "color_background": "",
