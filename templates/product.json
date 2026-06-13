@@ -27,6 +27,17 @@
             "show_rating": true
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
         "liquid_EGCKUB": {
           "type": "liquid",
           "settings": {
@@ -60,17 +71,6 @@
             "show_inventory_transfer": true,
             "show_inventory_quantity": "low",
             "color_scheme": "accent-1"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "enable_back_in_stock": false,
-            "show_back_in_stock_name": false,
-            "show_back_in_stock_phone": false
           }
         },
         "liquid_ewrrAR": {
@@ -110,11 +110,11 @@
       "block_order": [
         "liquid_w9CKK9",
         "title",
+        "buy_buttons",
         "liquid_EGCKUB",
         "countdown",
         "variant_picker",
         "inventory",
-        "buy_buttons",
         "liquid_ewrrAR",
         "pickup_availability",
         "share",
