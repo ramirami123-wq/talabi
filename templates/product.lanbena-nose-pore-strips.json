@@ -228,6 +228,79 @@
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
       }
     },
+    "before_after_BPFBYk": {
+      "type": "before-after",
+      "blocks": {
+        "comparison_LPqCNK": {
+          "type": "comparison",
+          "settings": {}
+        },
+        "comparison_bAd7rQ": {
+          "type": "comparison",
+          "settings": {}
+        },
+        "comparison_ifJBeF": {
+          "type": "comparison",
+          "settings": {}
+        },
+        "comparison_XPerW3": {
+          "type": "comparison",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "comparison_LPqCNK",
+        "comparison_bAd7rQ",
+        "comparison_ifJBeF",
+        "comparison_XPerW3"
+      ],
+      "name": "Fixed Divider Before After",
+      "settings": {
+        "full_width": true,
+        "show_top_line": true,
+        "heading": "BEFORE & AFTER",
+        "background_color": "#f7f7f7",
+        "heading_color": "#000000",
+        "heading_size": 20,
+        "mobile_heading_size": 20,
+        "heading_spacing": 18,
+        "mobile_heading_spacing": 16,
+        "card_width": 280,
+        "mobile_card_width": 270,
+        "card_ratio": "4 / 5",
+        "gap": 14,
+        "mobile_gap": 14,
+        "radius": 18,
+        "mobile_radius": 18,
+        "divider_width": 10,
+        "divider_area_width": 56,
+        "divider_extend": 8,
+        "divider_radius": 50,
+        "divider_line_top_color": "#ffffff",
+        "divider_line_middle_color": "#FFFFFF",
+        "divider_line_bottom_color": "#ffffff",
+        "divider_border_width": 1,
+        "divider_border_color": "#fff0dc",
+        "divider_inner_highlight": 6,
+        "divider_glow_color": "#FF8C00",
+        "divider_glow_opacity": 20,
+        "divider_glow_width": 10,
+        "divider_glow_blur": 9,
+        "divider_shadow_color": "#FF8C00",
+        "divider_shadow_opacity": 20,
+        "divider_shadow_blur": 16,
+        "divider_shadow_spread": 4,
+        "divider_shadow_blur_2": 60,
+        "divider_shadow_spread_2": 10,
+        "speed": 14,
+        "direction": "right",
+        "pause_on_hover": false,
+        "padding_top": 28,
+        "padding_bottom": 32,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 28
+      }
+    },
     "scrolling-text": {
       "type": "scrolling-text",
       "blocks": {
@@ -725,6 +798,7 @@
   "order": [
     "main-product",
     "help-drawer",
+    "before_after_BPFBYk",
     "scrolling-text",
     "images_with_text_P7NjP4",
     "scrolling_text_43FRrM",
