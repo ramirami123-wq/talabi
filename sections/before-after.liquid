@@ -1,0 +1,740 @@
+<section id="fixed-ba-{{ section.id }}" class="fixed-ba-section {% if section.settings.full_width %}fixed-ba-full-width{% endif %}">
+  <div class="fixed-ba-inner">
+    {% if section.settings.show_top_line %}
+      <div class="fixed-ba-top-line"></div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h2 class="fixed-ba-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="fixed-ba-display-area">
+
+      <div class="fixed-ba-viewport">
+        <!-- BEFORE SIDE -->
+        <div class="fixed-ba-layer fixed-ba-before-layer">
+          <div class="fixed-ba-track">
+            {% for repeat in (1..2) %}
+              <div class="fixed-ba-group">
+                {% for block in section.blocks %}
+                  <div class="fixed-ba-slide" {{ block.shopify_attributes }}>
+                    <div class="fixed-ba-card">
+                      {% if block.settings.before_image != blank %}
+                        {{ block.settings.before_image | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'fixed-ba-img', alt: 'Before image' }}
+                      {% else %}
+                        <div class="fixed-ba-placeholder">Before</div>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- AFTER SIDE -->
+        <div class="fixed-ba-layer fixed-ba-after-layer" aria-hidden="true">
+          <div class="fixed-ba-track">
+            {% for repeat in (1..2) %}
+              <div class="fixed-ba-group">
+                {% for block in section.blocks %}
+                  <div class="fixed-ba-slide">
+                    <div class="fixed-ba-card">
+                      {% if block.settings.after_image != blank %}
+                        {{ block.settings.after_image | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'fixed-ba-img', alt: 'After image' }}
+                      {% else %}
+                        <div class="fixed-ba-placeholder">After</div>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- FIXED FRONT CENTER DIVIDER -->
+      <div class="fixed-ba-divider" aria-hidden="true">
+        <span class="fixed-ba-divider-glow"></span>
+        <span class="fixed-ba-divider-shadow"></span>
+        <span class="fixed-ba-divider-line"></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  #fixed-ba-{{ section.id }} {
+    position: relative;
+    background: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  #fixed-ba-{{ section.id }}.fixed-ba-full-width {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-inner {
+    width: 100%;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-top-line {
+    width: calc(100% - 32px);
+    max-width: 390px;
+    height: 1px;
+    background: rgba(0,0,0,0.12);
+    margin: 0 auto 22px;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-heading {
+    margin: 0 0 {{ section.settings.heading_spacing }}px;
+    text-align: center;
+    font-size: {{ section.settings.heading_size }}px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: {{ section.settings.heading_color }};
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-display-area {
+    position: relative !important;
+    width: 100% !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+    z-index: 1 !important;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-viewport {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-layer {
+    width: 100%;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-before-layer {
+    position: relative !important;
+    z-index: 1 !important;
+    clip-path: inset(0 50% 0 0);
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-after-layer {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    clip-path: inset(0 0 0 50%);
+    pointer-events: none;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-track {
+    display: flex;
+    width: max-content;
+    animation: fixedBaScroll-{{ section.id }} {{ section.settings.speed }}s linear infinite;
+    {% if section.settings.direction == 'right' %}
+      animation-direction: reverse;
+    {% endif %}
+  }
+
+  {% if section.settings.pause_on_hover %}
+    #fixed-ba-{{ section.id }} .fixed-ba-viewport:hover .fixed-ba-track {
+      animation-play-state: paused;
+    }
+  {% endif %}
+
+  #fixed-ba-{{ section.id }} .fixed-ba-group {
+    display: flex;
+    gap: {{ section.settings.gap }}px;
+    padding-right: {{ section.settings.gap }}px;
+    flex-shrink: 0;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-slide {
+    width: {{ section.settings.card_width }}px;
+    flex: 0 0 {{ section.settings.card_width }}px;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-card {
+    width: 100%;
+    aspect-ratio: {{ section.settings.card_ratio }};
+    border-radius: {{ section.settings.radius }}px;
+    overflow: hidden;
+    background: #eeeeee;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #fixed-ba-{{ section.id }} .fixed-ba-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+  }
+
+  /* DIVIDER WRAPPER - FRONT CENTER */
+  #fixed-ba-{{ section.id }} .fixed-ba-divider {
+    position: absolute !important;
+    top: -{{ section.settings.divider_extend }}px !important;
+    bottom: -{{ section.settings.divider_extend }}px !important;
+    left: 50% !important;
+    width: {{ section.settings.divider_area_width }}px !important;
+    transform: translateX(-50%) !important;
+    z-index: 2147483647 !important;
+    pointer-events: none !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  /* BIG OUTER GLOW */
+  #fixed-ba-{{ section.id }} .fixed-ba-divider-glow {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: {{ section.settings.divider_glow_width }}px !important;
+    transform: translateX(-50%) !important;
+    border-radius: {{ section.settings.divider_radius }}px !important;
+    background: {{ section.settings.divider_glow_color }} !important;
+    opacity: {{ section.settings.divider_glow_opacity | divided_by: 100.0 }} !important;
+    filter: blur({{ section.settings.divider_glow_blur }}px) !important;
+    display: block !important;
+    z-index: 1 !important;
+  }
+
+  /* SHADOW LAYER AROUND THE LINE */
+  #fixed-ba-{{ section.id }} .fixed-ba-divider-shadow {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: {{ section.settings.divider_width }}px !important;
+    transform: translateX(-50%) !important;
+    border-radius: {{ section.settings.divider_radius }}px !important;
+    display: block !important;
+    z-index: 2 !important;
+    opacity: {{ section.settings.divider_shadow_opacity | divided_by: 100.0 }} !important;
+
+    box-shadow:
+      0 0 {{ section.settings.divider_shadow_blur }}px {{ section.settings.divider_shadow_spread }}px {{ section.settings.divider_shadow_color }},
+      0 0 {{ section.settings.divider_shadow_blur_2 }}px {{ section.settings.divider_shadow_spread_2 }}px {{ section.settings.divider_shadow_color }} !important;
+  }
+
+  /* SOLID WHITE / CREAM DIVIDER LINE */
+  #fixed-ba-{{ section.id }} .fixed-ba-divider-line {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: {{ section.settings.divider_width }}px !important;
+    transform: translateX(-50%) !important;
+    border-radius: {{ section.settings.divider_radius }}px !important;
+    display: block !important;
+    z-index: 3 !important;
+
+    background: linear-gradient(
+      180deg,
+      {{ section.settings.divider_line_top_color }} 0%,
+      {{ section.settings.divider_line_middle_color }} 50%,
+      {{ section.settings.divider_line_bottom_color }} 100%
+    ) !important;
+
+    box-shadow:
+      0 0 0 {{ section.settings.divider_border_width }}px {{ section.settings.divider_border_color }},
+      inset 0 0 {{ section.settings.divider_inner_highlight }}px rgba(255,255,255,0.95) !important;
+  }
+
+  @keyframes fixedBaScroll-{{ section.id }} {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #fixed-ba-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    #fixed-ba-{{ section.id }} .fixed-ba-heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+      margin-bottom: {{ section.settings.mobile_heading_spacing }}px;
+    }
+
+    #fixed-ba-{{ section.id }} .fixed-ba-group {
+      gap: {{ section.settings.mobile_gap }}px;
+      padding-right: {{ section.settings.mobile_gap }}px;
+    }
+
+    #fixed-ba-{{ section.id }} .fixed-ba-slide {
+      width: {{ section.settings.mobile_card_width }}px;
+      flex-basis: {{ section.settings.mobile_card_width }}px;
+    }
+
+    #fixed-ba-{{ section.id }} .fixed-ba-card {
+      border-radius: {{ section.settings.mobile_radius }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Fixed Divider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make section full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_line",
+      "label": "Show top line",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "BEFORE & AFTER"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size desktop",
+      "min": 14,
+      "max": 44,
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "label": "Heading size mobile",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Space under heading desktop",
+      "min": 4,
+      "max": 40,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_spacing",
+      "label": "Space under heading mobile",
+      "min": 4,
+      "max": 40,
+      "step": 1,
+      "default": 16
+    },
+
+    {
+      "type": "header",
+      "content": "Carousel design"
+    },
+    {
+      "type": "range",
+      "id": "card_width",
+      "label": "Card width desktop",
+      "min": 180,
+      "max": 440,
+      "step": 10,
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_width",
+      "label": "Card width mobile",
+      "min": 140,
+      "max": 340,
+      "step": 10,
+      "default": 270
+    },
+    {
+      "type": "select",
+      "id": "card_ratio",
+      "label": "Card shape",
+      "default": "4 / 5",
+      "options": [
+        {
+          "value": "1 / 1",
+          "label": "Square"
+        },
+        {
+          "value": "4 / 5",
+          "label": "Portrait"
+        },
+        {
+          "value": "3 / 4",
+          "label": "Tall portrait"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap desktop",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Gap mobile",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "label": "Card radius desktop",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_radius",
+      "label": "Card radius mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "default": 18
+    },
+
+    {
+      "type": "header",
+      "content": "Divider line"
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "label": "Divider line width",
+      "min": 6,
+      "max": 24,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "divider_area_width",
+      "label": "Divider total design area width",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "divider_extend",
+      "label": "Divider extend outside images",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "divider_radius",
+      "label": "Divider radius",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "divider_line_top_color",
+      "label": "Divider top color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "divider_line_middle_color",
+      "label": "Divider middle color",
+      "default": "#fff7ed"
+    },
+    {
+      "type": "color",
+      "id": "divider_line_bottom_color",
+      "label": "Divider bottom color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "divider_border_width",
+      "label": "Divider border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "divider_border_color",
+      "label": "Divider border color",
+      "default": "#fff0dc"
+    },
+    {
+      "type": "range",
+      "id": "divider_inner_highlight",
+      "label": "Divider inner highlight",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 6
+    },
+
+    {
+      "type": "header",
+      "content": "Divider glow"
+    },
+    {
+      "type": "color",
+      "id": "divider_glow_color",
+      "label": "Glow color",
+      "default": "#FF8C00"
+    },
+    {
+      "type": "range",
+      "id": "divider_glow_opacity",
+      "label": "Glow transparency",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 65
+    },
+    {
+      "type": "range",
+      "id": "divider_glow_width",
+      "label": "Glow width",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "divider_glow_blur",
+      "label": "Glow blur",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 15
+    },
+
+    {
+      "type": "header",
+      "content": "Divider shadow"
+    },
+    {
+      "type": "color",
+      "id": "divider_shadow_color",
+      "label": "Shadow color",
+      "default": "#FF8C00"
+    },
+    {
+      "type": "range",
+      "id": "divider_shadow_opacity",
+      "label": "Shadow transparency",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 85
+    },
+    {
+      "type": "range",
+      "id": "divider_shadow_blur",
+      "label": "First shadow blur",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "divider_shadow_spread",
+      "label": "First shadow spread",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "divider_shadow_blur_2",
+      "label": "Second shadow blur",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "divider_shadow_spread_2",
+      "label": "Second shadow spread",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 10
+    },
+
+    {
+      "type": "header",
+      "content": "Auto scroll"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Auto-scroll speed",
+      "min": 8,
+      "max": 80,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Scroll direction",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Right to left"
+        },
+        {
+          "value": "right",
+          "label": "Left to right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": false
+    },
+
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top desktop",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom desktop",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "default": 28
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison",
+      "name": "Comparison image pair",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "before_image",
+          "label": "Before image"
+        },
+        {
+          "type": "image_picker",
+          "id": "after_image",
+          "label": "After image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fixed Divider Before After",
+      "blocks": [
+        {
+          "type": "comparison"
+        },
+        {
+          "type": "comparison"
+        },
+        {
+          "type": "comparison"
+        },
+        {
+          "type": "comparison"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
