@@ -255,7 +255,7 @@
         "full_width": true,
         "show_top_line": true,
         "heading": "BEFORE & AFTER",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "heading_color": "#000000",
         "heading_size": 20,
         "mobile_heading_size": 20,
@@ -273,16 +273,16 @@
         "divider_extend": 8,
         "divider_radius": 50,
         "divider_line_top_color": "#ffffff",
-        "divider_line_middle_color": "#FFFFFF",
+        "divider_line_middle_color": "#ffffff",
         "divider_line_bottom_color": "#ffffff",
         "divider_border_width": 1,
         "divider_border_color": "#fff0dc",
         "divider_inner_highlight": 6,
-        "divider_glow_color": "#FF8C00",
+        "divider_glow_color": "#ff8c00",
         "divider_glow_opacity": 20,
         "divider_glow_width": 10,
         "divider_glow_blur": 9,
-        "divider_shadow_color": "#FF8C00",
+        "divider_shadow_color": "#ff8c00",
         "divider_shadow_opacity": 20,
         "divider_shadow_blur": 16,
         "divider_shadow_spread": 4,
@@ -329,60 +329,6 @@
         "padding_bottom": 28,
         "divider": false,
         "rounded": false
-      }
-    },
-    "images_with_text_P7NjP4": {
-      "type": "images-with-text",
-      "blocks": {
-        "heading_tLmq3W": {
-          "type": "heading",
-          "settings": {
-            "heading": "Clear Pores, Confident Skin",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_gTR73M": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed to target clogged pores, this treatment helps remove excess oil and buildup while refining your skin’s texture. Quick, easy, and effective — perfect for your weekly skincare routine.<br/></p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_tLmq3W",
-        "text_gTR73M"
-      ],
-      "name": "t:sections.images-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/WhatsApp_Image_2026-05-03_at_9.23.58_AM.jpg",
-        "image_ratio": "square",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "color_text": "#000000",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
       }
     },
     "scrolling_text_43FRrM": {
@@ -796,7 +742,6 @@
     "help-drawer",
     "before_after_BPFBYk",
     "scrolling-text",
-    "images_with_text_P7NjP4",
     "scrolling_text_43FRrM",
     "177456451780b5da70",
     "images_with_text_WtcxDF",
