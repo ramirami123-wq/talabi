@@ -231,28 +231,24 @@
     "before_after_BPFBYk": {
       "type": "before-after",
       "blocks": {
+        "comparison_qxEhkK": {
+          "type": "comparison",
+          "settings": {
+            "before_image": "shopify://shop_images/7kyu2d8clqq41_aa20d85a-a5f0-4f44-a411-b91e1fd1f948.webp",
+            "after_image": "shopify://shop_images/7kyu2d8clqq41.webp"
+          }
+        },
         "comparison_LPqCNK": {
           "type": "comparison",
-          "settings": {}
-        },
-        "comparison_bAd7rQ": {
-          "type": "comparison",
-          "settings": {}
-        },
-        "comparison_ifJBeF": {
-          "type": "comparison",
-          "settings": {}
-        },
-        "comparison_XPerW3": {
-          "type": "comparison",
-          "settings": {}
+          "settings": {
+            "before_image": "shopify://shop_images/before.jpg",
+            "after_image": "shopify://shop_images/after.png"
+          }
         }
       },
       "block_order": [
-        "comparison_LPqCNK",
-        "comparison_bAd7rQ",
-        "comparison_ifJBeF",
-        "comparison_XPerW3"
+        "comparison_qxEhkK",
+        "comparison_LPqCNK"
       ],
       "name": "Fixed Divider Before After",
       "settings": {
