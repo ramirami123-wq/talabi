@@ -36,7 +36,7 @@
         "liquid_EGCKUB": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">💧 Deep Overnight Hydration</span> – Replenish your skin with intense moisture while you sleep.<br><br>\n<span style=\"font-weight: bold;\">✨ Boosted Skin Elasticity</span> – Help improve firmness and support a smoother, more youthful look.<br><br>\n<span style=\"font-weight: bold;\">🌙 Wake Up Glowing</span> – Enjoy soft, radiant skin every morning with a refreshed, healthy finish.\n</div>"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n  <span style=\"font-weight: bold;\">Got large pores and blackheads? 😩</span><br><br>\n  <span style=\"font-weight: bold;\">Centella is your solution ✨</span><br><br>\n  🌊 Cleans pores & reduces their appearance<br>\n  💗 Soothes skin & redness<br>\n  ✨ Smooths skin & adds glow<br>\n  🌿 Helps reduce blackheads with regular use<br><br>\n  <span style=\"font-weight: bold;\">Let your skin breathe again 💫</span>\n</div>"
           }
         },
         "countdown": {
